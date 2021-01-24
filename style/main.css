@@ -150,7 +150,7 @@ footer {
 
 @media screen and (max-width: 599px) {
     html::before {
-        background: rgba(30, 215, 95, 0.75) no-repeat center center fixed;
+        background: rgba(30, 215, 95, 0.45) no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
