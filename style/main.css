@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: #00000fef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85%;
+    height: 100vh;
+    margin: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+}
+
+header, footer {
+    margin: 1rem;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.svg {
+    background-color: rgba(30, 215, 95, 0.75);
+    border-radius: 50px;
+    padding: 4px;
+    width: 70%;
+    height: 100%;
+}
+
+main div, .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #000014;
+    border-radius: 5px;
+    padding: 2rem 3rem 2rem 0;
+    margin: 1rem -10rem 0 1rem;
+    width: 55vw;
+    z-index: 2;
+}
+
+.content article, .content form {
+    margin: 20px;
+    margin-left: 0;
+}
+
+.tagline, h2, h3 {
+    font-size: 2rem;
+    width: 30ch;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.top-tagline {
+    color: rgba(30, 215, 95, 0.75);
+}
+
+.copy {
+    width: 42ch;
+    color: rgba(255, 255, 255, 0.68);
+    line-height: 150%;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    background: rgb(53, 53, 53);
+}
+
+input[type=email], input[type=email]:focus {
+    padding: 0 2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    color: white;
+}
+
+:-ms-input-placeholder {
+    color: white;
+}
+
+.bg-image {
+    position: relative;
+}
+
+input[type=submit], input[type=submit]:focus {
+    padding: 0.8rem 2rem;
+    margin: 0.2rem;
+    border: none;
+    border-radius: 50px;
+    background: rgba(30, 215, 95, 0.75);
+    transition: 0.1s;
+}
+
+input[type=submit]:active {
+    transform: translateY(5%);
+    background: rgba(30, 215, 95, 0.85);
+    outline: none;
+    transition: 0.1s;
+}
+
+.bg-image::before {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(30, 215, 95, 0.75);
+    border-radius: 5px;
+}
+
+.bg-image img {
+    filter: grayscale(100%);
+    mix-blend-mode: hard-light;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 599px) {
+    html::before {
+        background: rgba(30, 215, 95, 0.75) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        mix-blend-mode: hard-light;
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    html {
+        background: url(/public/performer.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-align: center;
+        mix-blend-mode: hard-light;
+    }
+    html::after {
+        background: #00000fd2 no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100vw;
+    }
+    body {
+        justify-content: space-evenly;
+    }
+    header, footer {
+        z-index: 2;
+    }
+    header {
+        margin: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    body {
+        background: none;
+    }
+    .content {
+        background: none;
+        text-align: center;
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .content article, .content form {
+        margin: 0;
+    }
+    .tagline, h2, h3 {
+        font-size: 1.5rem;
+        width: auto;
+    }
+    .copy {
+        padding: 1rem 0;
+        width: unset;
+    }
+    form {
+        background: none;
+        flex-direction: column;
+    }
+    input[type=email] {
+        background: rgb(53, 53, 53);
+        padding: 0.8rem 2rem;
+        margin: 0.5rem;
+        border: none;
+        border-radius: 50px;
+    }
+    .bg-image {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .bg-image::before {
+        transform: translate(-22%, -60%);
+        width: 150%;
+    }
+    .bg-image img {
+        transform: translate(-22%, -60%);
+        width: 150%;
+    }
+}
+
+@media screen and (min-width: 2559px) {
+    body {
+        width: 60%;
+    }
+    .bg-image::before {
+        width: 129%;
+    }
+    .bg-image img {
+        width: 130%;
+    }
+}
