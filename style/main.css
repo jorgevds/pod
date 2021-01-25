@@ -5,7 +5,7 @@
 
 body {
     color: white;
-    background-color: #00000fef;
+    background-color: #00002b;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,7 +45,7 @@ main div, .container {
     display: flex;
     flex-direction: column;
     align-self: center;
-    background-color: #000014;
+    background-color: #00002b;
     border-radius: 5px;
     padding: 2rem 3rem 2rem 0;
     margin: 1rem -10rem 0 1rem;
